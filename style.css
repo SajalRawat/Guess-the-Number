@@ -1,6 +1,5 @@
 *{
      font-family: "Libertinus Mono", monospace;
-     margin: auto;
      padding: 0;
      margin: 0;
 }
@@ -41,4 +40,11 @@ body{
 
 .aboutMain{
     margin: 15px;
+}
+
+@media  (max-width:480px){
+.main{
+    margin: 0 45px;
+}
+    
 }
