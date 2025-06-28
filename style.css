@@ -1,0 +1,44 @@
+*{
+     font-family: "Libertinus Mono", monospace;
+     margin: auto;
+     padding: 0;
+     margin: 0;
+}
+.main {
+  font-family: "Libertinus Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+}
+
+
+body{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    padding: 10px;
+    margin: auto;
+}
+
+.about{
+    padding: 5px;
+}
+
+.score{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.scoreDisplay{
+    font-size: 23px;
+    padding: 5px;
+}
+
+.aboutMain{
+    margin: 15px;
+}
