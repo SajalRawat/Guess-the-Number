@@ -2,15 +2,16 @@
 
 let theINT = (1+Math.floor(Math.random()*99))
 
-console.log(theINT);
+console.log(`Ooh so you are a developer and came here for Answer \n Well Here is a reward for a developer froma developer \n
+    The Answer is ${theINT}`);
 
 
 
 
 let score = 100
 Response = {
-    less:"Less than Original",
-    more:"More than Original"
+    less:"Less than the Answer",
+    more:"More than the Answer"
 }
 
 function updater(response){
@@ -38,7 +39,15 @@ function win(){
     document.body.append(scoreBoard)
 
 }
+ function warn(){
+    document.querySelector(".aboutMain").innerHTML = "Error:Enter a Valid Number between 1 and 100"
+    document.querySelector(".aboutMain").classList.add("warn")
+     document.querySelector("#entry").value = ''
+     score = score-1
+      document.body.querySelector(".scoreDisplay").innerHTML = `Current Score: ${score}`
 
+
+ }
 
 
 
@@ -46,7 +55,9 @@ function win(){
 
 function check(){
     input = document.querySelector("#entry").value
-    if (input != ""){
+    if (input != "" && input>0 && input<=100){
+        document.querySelector(".aboutMain").innerHTML = "Number between 1 and 100"
+            document.querySelector(".aboutMain").classList.remove("warn")
     if (input<theINT){
                updater(Response.less)
     }
@@ -57,6 +68,11 @@ function check(){
     if (input==theINT){
         win()   
     }}
+
+    else{
+        warn()
+    }
+
 }
 
 document.querySelector("#entry").addEventListener('keydown',(event) => {

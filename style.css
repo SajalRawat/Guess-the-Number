@@ -21,11 +21,13 @@ body{
 
 .main{
     padding: 10px;
-    margin: auto;
 }
 
 .about{
     padding: 5px;
+     display: flex;
+            flex-direction: column;
+            align-items: center;
 }
 
 .score{
@@ -36,10 +38,14 @@ body{
 .scoreDisplay{
     font-size: 23px;
     padding: 5px;
+    margin: auto;
 }
 
 .aboutMain{
-    margin: 15px;
+    margin: 5px;
+}
+.warn{
+    color: rgb(197, 87, 87);
 }
 
 @media  (max-width:480px){
